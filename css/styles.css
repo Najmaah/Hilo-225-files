@@ -1,45 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&display=swap');
-
-
-/*GLOBAL*/
-body {
-    padding-top: 5rem;
-
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  grid-template-rows: auto; /* Let rows auto-size */
+  grid-gap: 10px; /* Space between grid items */
+  margin-top: 50px;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Playfair Display', serif;
+.grid-item {
+  background-color: #ccc;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5em;
 }
 
-
-main {
-    padding: 20px;
-}
-main.container-fluid {
-    width: 50%;
+.item1 {
+  grid-column: span 2; /* Make this box span two columns */
+  background-color: #ff6b6b; /* Red */
 }
 
-p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
+.item2 {
+  background-color: #6bcf6b; /* Green */
 }
 
-nav {
-    margin-bottom: 120px;
+.item3 {
+  background-color: #f0e130; /* Yellow */
 }
 
-.navbar-brand {
-    margin-left: 20px;
+.item4 {
+  background-color: #6ba6ff; /* Blue */
 }
 
-button.navbar-toggler{
-margin-right: 10px;
+.item5 {
+  background-color: #ba68c8; /* Purple */
 }
 
-.home_2col {
-    margin-bottom: 20px;
-}
-
-img.dibley {
-    max-width: 100%
+.item6 {
+  grid-column: span 2; /* Make this box span two columns */
+  background-color: #f1a6c8; /* Pink */
 }
